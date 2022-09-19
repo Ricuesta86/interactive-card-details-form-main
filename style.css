@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.main-container {
+  border: 1px solid red;
+  width: 375px;
+  margin: auto;
+}
+.main-container__background-section {
+  background-image: url("../images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  height: 240px;
+  position: relative;
+}
+.main-container__form-section {
+  padding: 90px 24px 45px;
+}
+@media (min-width: 1440px) {
+  .main-container {
+    width: 1440px;
+    display: flex;
+  }
+  .main-container__background-section {
+    background-image: url("../images/bg-main-desktop.png");
+    width: 900px;
+    height: 900px;
+  }
+}
+
+.card {
+  width: 288px;
+  height: 160px;
+  color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  background-image: url("../images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 126px;
+  left: 18px;
+  z-index: 1;
+  letter-spacing: 2px;
+}
+@media (min-width: 1440px) {
+  .card {
+    width: 450px;
+    height: 247px;
+    padding: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .card {
+    top: 187px;
+    left: 167px;
+  }
+}
+.card__logo {
+  width: 55px;
+  margin-bottom: 30px;
+}
+.card__number {
+  margin-bottom: 15px;
+}
+.card__details {
+  display: flex;
+  font-size: 0.6em;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+@media (min-width: 1440px) {
+  .card__logo {
+    width: 86px;
+    margin-bottom: 55px;
+  }
+  .card__number {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+  }
+}
+
+.card-back {
+  width: 288px;
+  height: 160px;
+  color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  background-image: url("../images/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 30px;
+  left: 75px;
+}
+@media (min-width: 1440px) {
+  .card-back {
+    width: 450px;
+    height: 247px;
+    padding: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .card-back {
+    top: 468px;
+    left: 257px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
